@@ -2,11 +2,12 @@ import { StyleSheet } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
+import { Header } from './componentes/header';
 
-export default function TabTwoScreen() {
+export default function Projetos() {
   return (
     <View style={styles.container}>
-      
+      <Header titulo={"Projetos"} />
     </View>
   );
 }

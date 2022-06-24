@@ -1,13 +1,13 @@
 import { StyleSheet } from 'react-native';
-import { View } from '../components/Themed';
 
-import { RootTabScreenProps } from '../types';
+import EditScreenInfo from '../components/EditScreenInfo';
+import { Text, View } from '../components/Themed';
 
-export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
+export default function Habilidades() {
   return (
-      <View>
-        
-      </View>
+    <View style={styles.container}>
+      
+    </View>
   );
 }
 
