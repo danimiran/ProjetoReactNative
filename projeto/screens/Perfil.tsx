@@ -10,6 +10,8 @@ export default function Perfil({ navigation }: RootTabScreenProps<"Perfil">) {
     <ScrollView style={styles.container}>
       <View style={styles.header}>
         <IconUser tamanho={100} />
+        <Text style={styles.titulo}>Daniela Miranda de Almeida</Text>
+        <Text style={styles.subtitulo}>Desenvolvedora em formação</Text>
       </View>
       <Text style={styles.title}>Sobre</Text>
       <Text style={styles.conteudo}>
@@ -21,9 +23,9 @@ export default function Perfil({ navigation }: RootTabScreenProps<"Perfil">) {
       <Text style={styles.conteudo}>Me siga nas redes sociais!</Text>
 
       <View style={styles.row}>
-        <Icone titulo={"Intagram"} nomeIcone={"instagram-square"} />
-        <Icone titulo={"GitHub"} nomeIcone={"github"} />
-        <Icone titulo={"Linkedin"} nomeIcone={"linkedin"} />
+        <Icone titulo={"Intagram"} nomeIcone={"instagram-square"} url={"https://www.instagram.com/"} />
+        <Icone titulo={"GitHub"} nomeIcone={"github"} url={"https://github.com/danimiran"}/>
+        <Icone titulo={"Linkedin"} nomeIcone={"linkedin"} url={"https://br.linkedin.com/in/danielamirandaalmeida"}/>
       </View>
     </ScrollView>
   );
@@ -51,6 +53,8 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.17,
     shadowRadius: 3.05,
     elevation: 4,
+    alignItems: "center",
+    justifyContent: "center"
   },
 
   title: {
@@ -60,6 +64,17 @@ const styles = StyleSheet.create({
     marginTop: 50,
     marginLeft: 10,
     marginBottom: 20,
+  },
+
+  titulo:{
+    color: "#F5F5F5",
+    fontSize: 20,
+    fontWeight: "900",
+    marginBottom: 5,
+    marginTop: 15
+  },
+  subtitulo:{
+    color: "#F5F5F5",
   },
 
   conteudo: {
